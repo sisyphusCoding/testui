@@ -9,7 +9,6 @@ import Link from "next/link";
 const Page = styled.div`
   color: white;
   cursor: pointer;
-  background: ${props => props.background};
   height: 17rem;
   aspect-ratio: .8;
   border-radius: .5rem;

@@ -1,5 +1,3 @@
-import { truncate } from "fs";
-import { argv0 } from "process";
 import React , {useCallback , useEffect , useState} from "react";
 
 
@@ -14,8 +12,12 @@ interface ScrollValue {
     scrollY: 0
 })
 
+type Props = {
+   children: React.ReactNode
+}
 
-const ScrollObserver: React.FC = ({children}) => {
+
+const ScrollObserver: React.FC<Props> = ({ children }) => {
   
   const [scrollY ,setScrollY] = useState(0)
   const handleScroll = useCallback(()=>{
@@ -31,9 +33,7 @@ const ScrollObserver: React.FC = ({children}) => {
 
     
   return (
-    <ScrollContext.Provider
-           value={{scrollY}} 
-          >
+    <ScrollContext.Provider value={{scrollY}} >
       {children}
     </ScrollContext.Provider>
   )

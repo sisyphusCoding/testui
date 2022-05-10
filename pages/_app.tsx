@@ -8,12 +8,14 @@ import ScrollObserver from '../utils/scroll-observer'
 function MyApp({ Component, pageProps }: AppProps) {
 
   return (     
+  
           <ScrollObserver>   
-            <ChakraProvider>
+          <ChakraProvider>
               <Component {...pageProps} />
-            </ChakraProvider>
-          </ScrollObserver>
 
+              </ChakraProvider>
+      
+          </ScrollObserver>
     )
 }
 
