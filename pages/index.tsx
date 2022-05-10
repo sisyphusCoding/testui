@@ -6,11 +6,12 @@ import {Flex} from '@chakra-ui/react'
 import UberHead from '../components/uberhead'
 
 import AboutUs from '../components/aboutus'
+import Skills from '../components/skills'
 
 const Home: NextPage = () => {
   return (
 
-      <Flex gap={20} flexDir='column' justifyContent='start' alignItems='center'  color='whiteAlpha.800'  bg='blackAlpha.800' >   
+      <Flex flexDir='column' justifyContent='start' alignItems='center'  color='whiteAlpha.800'  bg='blackAlpha.800' >   
       <Head>
         <title>anish testing UI</title>
       </Head>
@@ -19,7 +20,8 @@ const Home: NextPage = () => {
         <UberHead / >
         
         <AboutUs / >
-
+  
+        <Skills />
 
       </Flex>
             
