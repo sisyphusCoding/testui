@@ -20,7 +20,7 @@ const Member: FC<Props> = ({ id, name, socialID }) => {
       >
       <Image
         className={`
-        will-change-transform transform-cpu
+        will-change-transform transform-gpu
         duration-[2s] transition-all ease
         ${loaded? 'opacity-100 translate-y-0':'opacity-0 translate-y-36'}`}
         loading="lazy"
