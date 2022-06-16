@@ -10,16 +10,22 @@ interface Props {
 const Member: FC<Props> = ({ id, name, socialID }) => {
     const[loaded,setLoaded] = useState<boolean>(false)
     const imageRef = useRef<HTMLDivElement>(null)
+    
+
+    
   return (
     <div 
+      className="overflow-hidden border-2 border-black"
       ref={imageRef} 
       >
       <Image
         className={`
-        duration-[2s] transition-opacity ease-in
-        ${loaded? 'opacity-100':'opacity-0'}`}
+        will-change-transform transform-cpu
+        duration-[2s] transition-all ease
+        ${loaded? 'opacity-100 translate-y-0':'opacity-0 translate-y-36'}`}
         loading="lazy"
         lazyRoot={imageRef}
+        lazyBoundary='-50%' 
         onLoad={()=>setLoaded(true)}
         src={`/assets/member/peep-${id}.svg`}
         alt={name}
