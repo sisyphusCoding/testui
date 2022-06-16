@@ -13,7 +13,7 @@ const VidHeader: FC = () => {
         loop
         muted
         playsInline
-        className="absolute top-0 w-full min-h-full object-cover"
+        className="absolute top-0 min-w-full min-h-screen object-cover"
       >
         <source src="/assets/test.mp4" type="video/mp4" />
       </video>
@@ -23,7 +23,7 @@ const VidHeader: FC = () => {
             text-zinc-200
             mix-blend-multiply
             bg-black bg-opacity-30
-            h-screen w-full
+            min-h-screen min-w-full
             backdrop-blur-[.25vh] backdrop-filter
             flex flex-col items-center justify-center text-center
             p-12 font-bold z-10 "
