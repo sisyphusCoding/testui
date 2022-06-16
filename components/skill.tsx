@@ -27,8 +27,8 @@ const Skills:FC = () => {
 
   return(
     <section
-      ref={refContainer}
-    className="bg-black text-white z-20 min-w-full "
+    ref={refContainer}
+    className="bg-black min-h-screen text-white z-40 min-w-full "
       >
         <p className="
         text-4xl md:text-6xl lg:text-7xl tracking-tight font-semibold
