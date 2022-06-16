@@ -8,25 +8,19 @@ interface Props {
 }
 
 const Member: FC<Props> = ({ id, name, socialID }) => {
-    const[loaded,setLoaded] = useState<boolean>(false)
-    const imageRef = useRef<HTMLDivElement>(null)
-    
+  const [loaded, setLoaded] = useState<boolean>(false);
+  const imageRef = useRef<HTMLDivElement>(null);
 
-    
   return (
-    <div 
-      className="overflow-hidden py-10 px-5"
-      ref={imageRef} 
-      >
+    <div className="overflow-hidden py-10 px-5" ref={imageRef}>
       <Image
         className={`
         will-change-transform transform-gpu
         duration-[2s] transition-all ease
-        ${loaded? 'opacity-100 translate-y-0':'opacity-0 translate-y-36'}`}
+        ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-36"}`}
         loading="lazy"
         lazyRoot={imageRef}
-        lazyBoundary='-20%' 
-        onLoad={()=>setLoaded(true)}
+        onLoad={() => setLoaded(true)}
         src={`/assets/member/peep-${id}.svg`}
         alt={name}
         width={1366}

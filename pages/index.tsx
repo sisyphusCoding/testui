@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import AboutUs from '../components/aboutus'
+import Skills from '../components/skill'
 import VidHeader from '../components/vidHeader'
 
 const Home: NextPage = () => {
   return (
     <div className='
-      bg-zinc-300
       scroll-smooth
       flex-col
       flex items-center justify-center
@@ -19,6 +19,8 @@ const Home: NextPage = () => {
       </Head>
     
     <VidHeader /> 
+    <AboutUs />
+    <Skills />  
     <AboutUs />
     </div>
   )

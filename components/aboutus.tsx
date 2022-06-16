@@ -6,7 +6,7 @@ const AboutUs: FC = () => {
   return (
     <section
       className="
-      z-40
+      z-20
       min-w-full  min-h-screen
       bg-zinc-200
       flex flex-col  py-20 px-10 text-3xl md:text-4xl text-zinc-800"
@@ -34,9 +34,7 @@ const AboutUs: FC = () => {
           <Member id="2" name="Gwen Norris" socialID="@gwen_norris" />
           <Member id="3" name="Alyssa Bowers" socialID="@alyssa_bowers" />
           <Member id="4" name="Kay Klein" socialID="@kay_klein" />
-
           <Member id="5" name="Penny Hayes" socialID="@penny_hayes" />
-
           <Member id="6" name="Cecelia Weaver" socialID="@cecelia_weaver" />
         </div>
       </div>

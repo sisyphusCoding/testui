@@ -1,4 +1,4 @@
-
+      
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +7,8 @@
 
 html,
 body {
-  scroll-behavior: smooth;
+  background: black;
+  scroll-behavior: smooth ;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
