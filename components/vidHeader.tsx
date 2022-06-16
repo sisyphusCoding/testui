@@ -22,12 +22,11 @@ const VidHeader: FC = () => {
       style={{ transform: `translate3d(0,-${progress * 25}vh,0)` }}
       ref={refContainer}
       className="
-      top-0 z-0
-      sticky
+      sticky 
+      top-0 -z-10
       transition-transform ease-linear duration-[0s] 
       will-change-transform
-      min-w-full
-      min-h-screen flex flex-col items-center justify-center"
+       flex flex-col items-center justify-center"
     >
       <video
         autoPlay
@@ -47,7 +46,7 @@ const VidHeader: FC = () => {
             min-h-screen min-w-full
             backdrop-blur-[.25vh] backdrop-filter
             flex flex-col items-center justify-center text-center
-            p-12 font-bold z-10"
+            p-12 font-bold"
       >
         <h1
           className="mb-6 text-6xl xl:text-7xl 

@@ -6,12 +6,7 @@ import VidHeader from '../components/vidHeader'
 
 const Home: NextPage = () => {
   return (
-    <div className='
-      scroll-smooth
-      flex-col
-      flex items-center justify-center
-      min-h-screen min-w-full
-      text-zinc-300 '>
+    <main>
       <Head>
         <title>Recto Verso</title>
         <meta name="description" content="Recto Verso built by Anish Kanna" />
@@ -22,7 +17,7 @@ const Home: NextPage = () => {
     <AboutUs />
     <Skills />  
     <AboutUs />
-    </div>
+    </main>
   )
 }
 

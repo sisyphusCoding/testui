@@ -6,7 +6,6 @@ const AboutUs: FC = () => {
   return (
     <section
       className="
-      z-20
       min-w-full  min-h-screen
       bg-zinc-200
       flex flex-col  py-20 px-10 text-3xl md:text-4xl text-zinc-800"
