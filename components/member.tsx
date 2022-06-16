@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useRef, useState } from "react";
 import Image from "next/image";
 
 interface Props {
@@ -8,12 +8,19 @@ interface Props {
 }
 
 const Member: FC<Props> = ({ id, name, socialID }) => {
+    const[loaded,setLoaded] = useState<boolean>(false)
+    const imageRef = useRef<HTMLDivElement>(null)
   return (
-    <div>
+    <div 
+      ref={imageRef} 
+      >
       <Image
+        className={`
+        duration-[2s] transition-opacity ease-in
+        ${loaded? 'opacity-100':'opacity-0'}`}
         loading="lazy"
-        blurDataURL={`/assets/member/peep-${id}.svg`}
-        placeholder="blur"
+        lazyRoot={imageRef}
+        onLoad={()=>setLoaded(true)}
         src={`/assets/member/peep-${id}.svg`}
         alt={name}
         width={1366}
