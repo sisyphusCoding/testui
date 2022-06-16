@@ -61,7 +61,7 @@ rearranging their prejudices.
            style={{opacity:opacitForBlock(progress,4)}}
          className='inline-block transition-all duration-1000 ease'
          >
-          It's redundant to complain , since nothing foreign has decided what we think and are.
+          It&apos;s redundant to complain , since nothing foreign has decided what we think and are.
         </span>
       </p>
     </section>
