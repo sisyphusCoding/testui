@@ -11,12 +11,12 @@ const Member: FC<Props> = ({ id, name, socialID }) => {
   const [loaded, setLoaded] = useState<boolean>(false);
 
   return (
-    <div className="overflow-hidden py-10 px-5">
+    <div className="overflow-hidden py-2">
       <Image
         className={`
         will-change-transform transform-gpu
         duration-[2s] transition-all ease
-        ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-36"}`}
+        ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-40"}`}
         onLoad={() => setLoaded(true)}
         src={`/assets/member/peep-${id}.svg`}
         loading='lazy'
