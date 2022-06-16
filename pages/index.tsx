@@ -6,6 +6,7 @@ import VidHeader from '../components/vidHeader'
 const Home: NextPage = () => {
   return (
     <div className='
+      bg-zinc-300
       scroll-smooth
       flex-col
       flex items-center justify-center

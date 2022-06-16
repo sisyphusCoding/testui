@@ -1,11 +1,34 @@
-import React, { FC } from "react";
+import React, { FC, useContext, useRef } from "react";
 import Image from "next/image";
+import { ScrollContext } from "../utils/scroll-observer";
 
 const VidHeader: FC = () => {
+
+  const refContainer = useRef<HTMLDivElement>(null)
+
+  //unpack scrollY
+  
+  const {scrollY} = useContext(ScrollContext)
+
+  let progress = 0
+
+
+  const {current:elContainer} = refContainer
+
+  if(elContainer){
+    progress = Math.min(1,scrollY / elContainer.clientHeight) 
+  }
+
   return (
     <section
+      style={{transform:`translate3d(0,-${progress*25}vh,0)`}}
+      ref={refContainer}
       className="
-      min-w-full relative 
+      top-0
+      sticky
+      transition-transform ease-linear duration-[0s] 
+      will-change-transform
+      min-w-full
       min-h-screen flex flex-col items-center justify-center"
     >
       <video
