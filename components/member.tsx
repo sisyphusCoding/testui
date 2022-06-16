@@ -25,7 +25,7 @@ const Member: FC<Props> = ({ id, name, socialID }) => {
         ${loaded? 'opacity-100 translate-y-0':'opacity-0 translate-y-36'}`}
         loading="lazy"
         lazyRoot={imageRef}
-        lazyBoundary='-50%' 
+        lazyBoundary='-20%' 
         onLoad={()=>setLoaded(true)}
         src={`/assets/member/peep-${id}.svg`}
         alt={name}
