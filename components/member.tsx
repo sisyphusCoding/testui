@@ -11,6 +11,7 @@ const Member: FC<Props> = ({ id, name, socialID }) => {
   return (
     <div>
       <Image
+        loading="lazy"
         blurDataURL={`/assets/member/peep-${id}.svg`}
         placeholder="blur"
         src={`/assets/member/peep-${id}.svg`}
