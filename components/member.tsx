@@ -15,7 +15,7 @@ const Member: FC<Props> = ({ id, name, socialID }) => {
     
   return (
     <div 
-      className="overflow-hidden border-2 border-black"
+      className="overflow-hidden py-10 px-5"
       ref={imageRef} 
       >
       <Image
