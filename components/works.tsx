@@ -14,11 +14,12 @@ const Works = () =><TileWrapper numOfPages={3}>
       renderContent={({progress})=>(
         <WorkContainter>
           <WorkLeft progress={progress} >
-              <div>We built 
-              <div>
-                  
-              </div>
-            </div>
+              <h2 
+                >
+               ONE RULE FOR ALL
+              <blockquote 
+                className="w-full text-xl text-right">-Immanuel Kant</blockquote>
+            </h2>
           </WorkLeft>
         </WorkContainter>
 
@@ -30,7 +31,11 @@ const Works = () =><TileWrapper numOfPages={3}>
 
         <WorkContainter>
           <WorkLeft progress={progress} >
-              <div>We built 2</div>
+              <h2>
+               THE MIND AS MYTH
+              <blockquote 
+                className="w-full text-xl text-right">-Eliminative materialism</blockquote>
+            </h2>
           </WorkLeft>
         </WorkContainter>
      
@@ -42,7 +47,11 @@ const Works = () =><TileWrapper numOfPages={3}>
 
         <WorkContainter>
           <WorkLeft progress={progress} >
-              <div>We built 3</div>
+              <h2>
+               PRIVATE LANGUAGE IS IMPOSSIBLE
+              <blockquote 
+                className="w-full text-xl text-right">-Ludwig Wittgenstein</blockquote>
+            </h2>
           </WorkLeft>
         </WorkContainter>
      

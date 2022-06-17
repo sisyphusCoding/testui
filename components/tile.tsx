@@ -47,7 +47,7 @@ export const TileWrapper:FC<WrapperProps>=({children,numOfPages})=>
       <section 
           ref={refContainer}
           className="relative bg-black text-white min-h-screen min-w-full"
-        style={{height:numOfPages*100+'vh'}}
+          style={{height:numOfPages*100+'vh'}}
         >
         {children}           
       </section> 

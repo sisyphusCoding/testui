@@ -22,7 +22,9 @@ export const WorkContainter:FC<Props> =({children}) => (
 export const WorkBackground: FC = () => (
   
   <div
-    className="grid grid-cols-1 lg:grid-cols-2 min-h-screen min-w-full sticky
+    className="grid grid-cols-1 lg:grid-cols-2 
+      min-h-screen  min-w-full 
+      sticky top-0
      bg-black h-[30vh] lg:h-auto"
     >
       <div
