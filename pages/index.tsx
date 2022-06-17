@@ -3,6 +3,7 @@ import Head from 'next/head'
 import AboutUs from '../components/aboutus'
 import Skills from '../components/skill'
 import VidHeader from '../components/vidHeader'
+import Works from '../components/works'
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +17,9 @@ const Home: NextPage = () => {
     <VidHeader /> 
     <AboutUs />
     <Skills />  
-    <AboutUs />
+    <Works />  
+     <AboutUs />  
+    
     </main>
   )
 }

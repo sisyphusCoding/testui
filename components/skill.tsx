@@ -22,8 +22,10 @@ const Skills:FC = () => {
     const halfH = screenH / 2
     const percentY = Math.min(clientHeight+halfH ,
     Math.max(-screenH,scrollY-offsetTop)+halfH)/clientHeight 
-     progress = Math.min(numOfPages - 0.5,Math.max(0.8,percentY*numOfPages)) 
+    progress = Math.min(numOfPages - 0.5,Math.max(0.5,percentY*numOfPages))    
+    console.log(progress,percentY)
   }
+
 
   return(
     <section
