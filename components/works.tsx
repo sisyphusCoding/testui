@@ -1,8 +1,8 @@
 import React from "react";
 import { TileBackground, TileContent, TileWrapper , Tile } from "./tile";
-import  {WorkContainter ,WorkBackground, WorkLeft } from "./work";
-
-
+import  {WorkContainter ,WorkBackground, WorkLeft, WorkRight } from "./work";
+import Image from 'next/image'
+import Kant from '../visual/kant'
 const Works = () =><TileWrapper numOfPages={3}>
   
   <TileBackground>
@@ -21,6 +21,17 @@ const Works = () =><TileWrapper numOfPages={3}>
                 className="w-full text-xl text-right">-Immanuel Kant</blockquote>
             </h2>
           </WorkLeft>
+          <WorkRight progress={progress}>
+            <Image 
+              className="rounded-lg"
+              src='/assets/kant.png'
+              alt="kant-philosophy"
+              layout="responsive"
+              height={800}
+              objectFit='contain'
+              width={800}
+                /> 
+          </WorkRight>
         </WorkContainter>
 
       )}></Tile>
@@ -37,6 +48,18 @@ const Works = () =><TileWrapper numOfPages={3}>
                 className="w-full text-xl text-right">-Eliminative materialism</blockquote>
             </h2>
           </WorkLeft>
+
+          <WorkRight progress={progress}>
+            <Image 
+              className="rounded-lg"
+              src='/assets/self.webp'
+              alt="kant-philosophy"
+              layout="responsive"
+              height={1000}
+              objectFit='contain'
+              width={1000}
+                /> 
+          </WorkRight>
         </WorkContainter>
      
       )}></Tile>
@@ -53,6 +76,17 @@ const Works = () =><TileWrapper numOfPages={3}>
                 className="w-full text-xl text-right">-Ludwig Wittgenstein</blockquote>
             </h2>
           </WorkLeft>
+          <WorkRight progress={progress}>
+            <Image 
+              className="rounded-lg"
+              src='/assets/ludwig.png'
+              alt="kant-philosophy"
+              layout="responsive"
+              height={1000}
+              objectFit='contain'
+              width={1000}
+                /> 
+          </WorkRight>
         </WorkContainter>
      
 

@@ -71,10 +71,10 @@ export const WorkRight:FC<Left> =({children,progress})=>{
 
   return(
     <div
-     className="h-screen flex flex-1 lg:items-center justify-center"
+     className="h-screen flex flex-1 items-start lg:items-center justify-center p-10"
     style={{transform:`translate3d(0,${translateY}px,0)` }}
       >
-      <div className="w-full max-w-md pt-10 lg:pt-0 px-10 md:px-0">
+      <div className="w-full  max-w-full ">
           {children}
       </div>
     </div>

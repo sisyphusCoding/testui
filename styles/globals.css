@@ -24,3 +24,14 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.spin{
+  animation:spining 3s linear infinite;
+}
+
+@keyframes spining {
+  to{
+    transform: rotate(360deg);
+  }
+}
+

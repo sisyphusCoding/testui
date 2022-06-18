@@ -8,6 +8,7 @@ module.exports = {
         tight: '-.015em'
     },
     extend: {
+      animation:['group-hover'],
       height:{
         'half-screen':'50vh',
       }
